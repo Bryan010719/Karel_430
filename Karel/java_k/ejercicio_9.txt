@@ -1,0 +1,15 @@
+class program {
+void xy(n)
+{
+iterate(n)
+{
+if(frontIsClear)
+move();
+}
+}
+    program () {
+        // TODO poner codigo aqui
+        xy(7);
+        turnoff();
+    }
+}

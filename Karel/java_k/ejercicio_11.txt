@@ -1,0 +1,27 @@
+class program {
+void turnright()
+{
+iterate(3)
+turnleft();
+}
+
+void xy(n)
+{
+if (iszero(n)) 
+pickbeeper();
+else
+{
+iterate(n)
+{
+putbeeper();
+}
+}
+}
+
+
+    program () {
+        // TODO poner codigo aqui
+        xy(2);
+        turnoff();
+    }
+}

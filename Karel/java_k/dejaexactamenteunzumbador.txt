@@ -1,0 +1,32 @@
+class program {
+void buscamultipleszumbadores() {
+pickbeeper();
+if(notNextToABeeper)
+{
+pickbeeper();
+}
+}
+
+void dejaunzumbador()
+{
+if(notNextToABeeper)
+{
+putbeeper();
+}
+else{
+buscamultipleszumbadores();
+}
+}
+
+
+    program () {
+    iterate(14)
+    {
+    dejaunzumbador();
+    move();
+    }
+       
+        
+        turnoff();
+    }
+}

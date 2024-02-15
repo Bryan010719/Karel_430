@@ -1,0 +1,68 @@
+class program {
+void turnright()
+{
+iterate(3)
+turnleft();
+}
+void salir()
+{
+turnright();
+move();
+move();
+turnleft();
+}
+void regreso()
+{
+turnright();
+move();
+move();
+turnright();
+}
+void desplazar_h()
+{
+if(frontIsClear)
+{
+move();
+desplazar_h();
+if(facingNorth)
+{
+turnright();
+move();
+}
+else
+move();
+}
+
+else
+{
+turnleft();
+desplazar_v();
+}
+}
+void desplazar_v()
+{
+if(frontIsClear)
+{
+move();
+desplazar_v();
+}
+if(facingSouth)
+{
+pickbeeper();
+turnleft();
+turnleft();
+}
+else
+move();
+}
+
+
+
+    program () {
+        // TODO poner codigo aqui
+        salir();
+        desplazar_h();
+        regreso();
+        turnoff();
+    }
+}

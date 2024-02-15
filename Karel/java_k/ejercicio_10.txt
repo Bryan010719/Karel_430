@@ -1,0 +1,36 @@
+class program {
+void turnright()
+{
+iterate(3)
+{
+turnleft();
+}
+}
+void xy(n)
+{
+iterate(succ(succ(n)))
+{
+if(frontIsBlocked)
+{
+turnleft();
+move();
+turnright();
+move();
+turnright();
+move();
+turnleft();
+}
+else
+move();
+}
+iterate(pred(pred(n)))
+putbeeper();
+
+}
+    program () {
+        // TODO poner codigo aqui
+        xy(10);
+        
+        turnoff();
+    }
+}
